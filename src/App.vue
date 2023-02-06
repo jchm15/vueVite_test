@@ -7,15 +7,7 @@
 </template>
 
 <script setup>
-import {inject, ref, reactive, onMounted, watch, computed} from "vue";
-const $axios = inject('$axios');
 
-const getList  = async () => {
-    let rtn = await $axios.get("/v1/select");
-    if(rtn.status === 200) {
-        console.log(rtn);
-    }
-};
 </script>
 
 
@@ -42,6 +34,6 @@ const getList  = async () => {
 /*    margin-top: 20px;*/
 /*}*/
 
-.nav {display:flex;background:indigo; padding: 8px 20px;}
+.nav {display:flex;background: #057eea; padding: 8px 20px;}
 .nav a {margin: 5px 20px; font-size:16px; color:white; text-decoration:none;}
 </style>
